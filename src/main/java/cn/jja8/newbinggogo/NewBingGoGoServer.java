@@ -110,6 +110,7 @@ public class NewBingGoGoServer extends NanoWSD {
 
     public static NanoHTTPD.Response goUrl(NanoHTTPD.IHTTPSession session,String stringUrl,Map<String,String> addHeaders){
         URL url;
+         System.out.println("此魔法链接服务器请求被bing拒绝！请稍后再试。url:"+stringUrl);
         try {
             url = new URL(stringUrl);
         } catch (MalformedURLException e) {
