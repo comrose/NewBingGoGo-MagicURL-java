@@ -158,6 +158,7 @@ public class NewBingGoGoServer extends NanoWSD {
         //获取请求状态代码
         if(code!=200){
             urlConnection.disconnect();
+            System.out.println("此魔法链接服务器请求被bing拒绝！请稍后再试。错误代码:"+code);
             return getReturnError("此魔法链接服务器请求被bing拒绝！请稍后再试。错误代码:"+code,null,false);
         }
 
